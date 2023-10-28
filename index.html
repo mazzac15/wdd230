@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cindy Mazza - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Cindy Mazza - course assignment portal">
+    <meta name="author" content="Cindy Mazza">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="Cindy Mazza Profile" width="75" height="100">
+        <h1>Cindy Mazza</h1>
+    </header>
+    <nav>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Chamber</a></li>
+          <li><a href="#">Site Plan</a></li>
+          <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li><a href="#">Activity 1</a></li>
+                <li><a href="#">Activity 2</a></li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <p>Weather: <span id="weather">Placeholder</span></p>
+            <p>Number of Visits: <span id="visits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&#169;<span id="currentYear"></span><span id="nameLocation"> Cindy Mazza, Florida</span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    <script  src="scripts/getDates.js"></script>
+
+</body>
+</html>
