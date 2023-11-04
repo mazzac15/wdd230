@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif; 
-    font-weight: 400;
+    font-weight: 500;
 }
 
 header, nav, main, footer {
@@ -27,8 +27,7 @@ img {
     margin-right: 20px;
 }
 nav {
-    background-color: #526760;
-    color: white;
+    background-color: #e3ebfa;
     text-align: center;
 
 }
@@ -37,15 +36,16 @@ nav ul {
 }
 
 nav a {
+    font-weight: 600;
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,.2);
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 nav .active {
