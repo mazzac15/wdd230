@@ -28,6 +28,8 @@ header {
     top: 10px;
     right: 10px;
     cursor: pointer;
+    width: 44px;
+    height: 44px;
 }
 
 #profile {
@@ -148,8 +150,7 @@ footer {
 
 
 #darkBtn {
-    width: 44px;
-    height: 44px;
+    
 }
 
 .dark-mode {
