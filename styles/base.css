@@ -20,19 +20,52 @@ header {
     justify-content: center;
     padding: 20px;
     display: flex;
+    position: relative;
 }
 
-img {
+#darkBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+#profile {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     margin-right: 20px;
 }
+
+/* hamburger button styling */
+
+#menu {
+    display: block;
+    position: absolute;
+    padding: 0;
+    
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+    content: "X"
+}
+
+/* navigation bar styling */
 nav {
     background-color: #e3ebfa;
     text-align: center;
-
+    min-height: 50px;
 }
+
+
 nav ul {
     list-style-type: none;
+}
+
+nav li {
+    display: none;
 }
 
 nav a {
@@ -48,6 +81,15 @@ nav a {
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.75);
 }
+
+.open li {
+    display: block;
+    width: 100%;
+} 
+
+/* .open li a {
+    display: block;
+} */
 
 nav .active {
     background-color: rgba(0,0,0,0.3);
@@ -67,7 +109,7 @@ h2 {
 .card {
     border: 1px solid black;
     border-radius: 5px;
-    height: 275px;
+    height: 270px;
     margin-bottom: 20px;
     list-style-type: none;
     text-align: center;
@@ -102,3 +144,20 @@ footer {
     text-align: center;
     color: white;
 }
+
+
+
+#darkBtn {
+    width: 44px;
+    height: 44px;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+
