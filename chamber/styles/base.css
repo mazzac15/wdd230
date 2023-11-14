@@ -28,6 +28,8 @@ header {
     position: relative;
 }
 
+
+
 .hero {
     position: relative;
 }
@@ -36,6 +38,20 @@ header {
     width: 100%;
     height: auto;
 
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%; /* Adjust vertical positioning as needed */
+    left: 50%; /* Adjust horizontal positioning as needed */
+    transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+    color: white;
+    font-size: 36px; /* Adjust the font size as needed */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Add a background color for better readability */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners to the element */
+    z-index: 1;
 }
 
 #menu {
