@@ -1,0 +1,43 @@
+@media screen and (min-width: 38rem) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: block;
+        flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
+    }
+    .events {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 40px;
+        margin: 20px;
+    }
+    .events h2{
+        grid-column: 1/4;
+    }
+    .weather {
+        grid-column: 1/4;
+    }
+    .spotlights {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .business {
+        display: flex;
+        
+        margin-bottom: 20px;
+        width: calc(50% - 10px);
+    }
+    .spotlights-title {
+        grid-column: 1/3;
+    }
+
+
+   
+}

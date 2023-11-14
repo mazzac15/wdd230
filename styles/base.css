@@ -89,19 +89,16 @@ nav a:hover {
     width: 100%;
 } 
 
-/* .open li a {
-    display: block;
-} */
 
 nav .active {
     background-color: rgba(0,0,0,0.3);
 }
-main {
+/* main {
     margin: 0 auto;
     padding: 20px;
 
 
-} 
+}  */
 h2 {
     text-align: left;
     margin: 30px;

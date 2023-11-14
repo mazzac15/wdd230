@@ -1,0 +1,149 @@
+
+/* --heading-font: 'Montserrat', sans-serif;
+--paragraph-font: 'Roboto Mono', monospace; */
+
+ /* change the values below to your colors from your palette */
+ /* --primary-color: #A0C1B9;
+ --secondary-color: #2B4570;
+ --accent1-color: #70A0AF;
+ --accent2-color: #FFCAB1; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 600;
+}
+
+header {
+    background-color: #2B4570;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    display: flex;
+    position: relative;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-port-orange {
+    width: 100%;
+    height: auto;
+
+}
+
+#menu {
+    display: block;
+    position: absolute;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+#menu::before {
+	content: "☰";
+    color: white;
+}
+
+#menu.open::before {
+    content: "X"
+}
+
+/* navigation bar styling */
+nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    font-weight: 600;
+    font-size: 20px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.open li {
+    display: block;
+    width: 100%;
+} 
+
+nav .active {
+    background-color: rgba(0,0,0,0.25);
+}
+
+/* .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* grid-gap: 20px;
+    } */
+
+h2 {
+    color: #2B4570;
+    text-align: center;
+    margin: 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #70A0AF;
+    text-align: center;
+}
+
+.business {
+    padding: 10px;
+
+
+}
+
+.weather {
+    background-color: #A0C1B9; 
+    padding: 20px;
+}
+
+.spotlights {
+    background-color: #FFCAB1;
+    padding: 20px;
+}
+
+.spotlights-title {
+    width: 100%;
+    text-align: center;
+}
+
+.business-info {
+    padding: 10px;
+    text-align: center;
+}
+
+
+footer {
+    background-color: #2B4570;
+    text-align: center;
+    color: white;
+}
