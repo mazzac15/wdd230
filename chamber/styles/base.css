@@ -28,7 +28,11 @@ header {
     position: relative;
 }
 
-
+.logo {
+    width: 100px;
+    
+    
+}
 
 .hero {
     position: relative;
@@ -42,15 +46,15 @@ header {
 
 .hero-title {
     position: absolute;
-    top: 50%; /* Adjust vertical positioning as needed */
-    left: 50%; /* Adjust horizontal positioning as needed */
-    transform: translate(-50%, -50%); /* Center the element both horizontally and vertically */
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: white;
-    font-size: 36px; /* Adjust the font size as needed */
+    font-size: 24px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.3); /* Add a background color for better readability */
-    padding: 10px 20px; /* Adjust padding as needed */
-    border-radius: 5px; /* Add rounded corners to the element */
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 5px;
     z-index: 1;
 }
 
@@ -59,6 +63,8 @@ header {
     position: absolute;
     padding: 0;
     cursor: pointer;
+    right: 20px;
+    top: 10px;
 }
 
 
@@ -72,14 +78,14 @@ header {
 }
 
 /* navigation bar styling */
-nav {
+/* nav {
     display: flex;
     align-items: center;
     
-}
+} */
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none;   
 }
 
 nav li {
@@ -126,8 +132,8 @@ h2 {
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-    color: white;
-    background-color: #70A0AF;
+    color: black;
+    background-color: #70a0af;
     text-align: center;
 }
 

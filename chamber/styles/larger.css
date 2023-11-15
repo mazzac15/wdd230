@@ -1,15 +1,34 @@
 @media screen and (min-width: 38rem) {
 
+    header nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    #logo_link: {
+        flex-grow: 0;
+    }
     nav ul {
         display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+        padding: 0;
     }
-
+   
     nav ul li {
         display: block;
-        flex: 1 1 100%;
     }
+
+    nav {
+        flex-direction: row;
+    }
+
     #menu {
         display: none;
+    }
+
+    .hero-title {
+        font-size: 36px;
     }
     .events {
         display: grid;
