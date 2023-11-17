@@ -177,10 +177,10 @@ h2 {
     height: auto;
     overflow: hidden;
     margin: 0 auto;
-    animation: fade 15%;  
+    /* animation: fadeIn;   */
 }
 
-@keyframes fade {
+/* @keyframes fade {
     0% {
         opacity: 0;
     }
@@ -188,7 +188,7 @@ h2 {
     100% {
         opacity: 1;
     }
-}
+} */
 
 main ul {
     list-style-type: none;
