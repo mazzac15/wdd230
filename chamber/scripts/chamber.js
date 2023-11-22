@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.getElementById('days').innerText = "Back so soon! Awesome!";
         } else {
             const message = (daysDifference === 1) ? "day" : "days";
-            document.getElementById('days').innerText = 'You last visited ${daysDifference} ${message} ago.';
+            document.getElementById('days').innerText = `You last visited ${daysDifference} ${message} ago.`;
         }
     } else {
         document.getElementById('days').innerText = "Welcome! Let us know if you have any questions.";
