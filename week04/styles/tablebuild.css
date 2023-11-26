@@ -1,0 +1,54 @@
+:root {
+    --back: black;
+    --back2: #333333;
+	--forelight: white;
+    --zebra: #EEEEEE;
+    --border: rgba(0, 0, 0, 0.219);
+}
+
+body {
+    font-family: sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 5px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+}
+
+tr:first-child th {
+    background-color: var(--back);
+    color: var(--forelight);
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--back2);
+    font-size: larger;
+    color: var(--forelight);
+}
+
+#empty {
+    background-color: var(--back)
+}
+
+td {
+    text-align: center;
+    font-weight: 800;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
