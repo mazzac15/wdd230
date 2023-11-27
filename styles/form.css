@@ -17,7 +17,7 @@ main.form {
 }
 
 h1.form {
-    text-align: center;
+    text-align: left;
     color: var(--main-color);
 }
 
