@@ -1,3 +1,9 @@
+:root {
+    --main-color: #374B4A;
+    --secondary-color: #AB9B96;
+    --accent-color1: #F0E7D8;
+    --accent-color2: #BA6E6E;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +13,7 @@
 body {
     font-family: 'Montserrat', sans-serif; 
     font-weight: 600;
+    background-color: var(--accent-color1);
 }
 
 header, nav, main, footer {
@@ -60,7 +67,7 @@ header {
 
 /* navigation bar styling */
 nav {
-    background-color: #e3ebfa;
+    background-color: var(--secondary-color);
     text-align: center;
     min-height: 50px;
 }
@@ -150,6 +157,7 @@ h2 {
     margin-bottom: 20px;
     list-style-type: none;
     text-align: center;
+    background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);  
 }
 
@@ -181,15 +189,6 @@ h2 {
     /* animation: fadeIn;   */
 }
 
-/* @keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-} */
 
 main ul {
     list-style-type: none;
