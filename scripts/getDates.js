@@ -1,3 +1,13 @@
+//last modified//
+const currentYearElement = document.getElementById('currentYear');
+const currentYear = new Date().getFullYear();
+currentYearElement.textContent = currentYear;
+
+const lastModifiedElement = document.getElementById('lastModified');
+const lastModifiedDate = new Date(document.lastModified);
+lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate.toDateString();
+
+
 const hambutton = document.querySelector('#menu');
 const mainnav = document.querySelector('nav ul');
 
@@ -16,7 +26,24 @@ myBtn.addEventListener('click', () => {
 
 })
 
-const pswd1 = document.querySelector("#password");
+//visit counter//
+
+const visitsDisplay = document.querySelector(".visits");
+
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
+
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+} else {
+    visitsDisplay.textContent = 'Welcome, this is your first visit!';
+}
+
+numVisits++;
+
+localStorage.setItem("numVisits-ls", numVisits);
+
+//identical password check//
+pswd1 = document.querySelector("#password");
 const pswd2 = document.querySelector("#password2");
 const message = document.getElementById("message");
 
@@ -38,6 +65,7 @@ function checkSame() {
 	}
 }
 
+//email pattern check//
 document.querySelector('form').addEventListener('submit', function(event) {
     const emailInput = document.getElementById('email');
     const emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/i;
@@ -52,6 +80,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
     }
 });
 
+//rating//
 const rangeValue = document.getElementById("rangeValue");
 const range = document.getElementById("rating");
 
@@ -63,26 +92,4 @@ function displayRatingValue() {
     rangeValue.innerHTML = range.value;
 }
 
-const visitsDisplay = document.querySelector(".visits");
-
-let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
-
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-} else {
-    visitsDisplay.textContent = 'Welcome, this is your first visit!';
-}
-
-numVisits++;
-
-localStorage.setItem("numVisits-ls", numVisits);
-
-
-const currentYearElement = document.getElementById('currentYear');
-const currentYear = new Date().getFullYear();
-currentYearElement.textContent = currentYear;
-
-const lastModifiedElement = document.getElementById('lastModified');
-const lastModifiedDate = new Date(document.lastModified);
-lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate.toDateString();
 
