@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Orange Chamber of Commerce</title>
+    <meta name="description" content="Cindy Mazza - WDD 230 - Chamber of Commerce page">
+    <meta name="author" content="Cindy Mazza">
+    <meta property="og:title" content="Cindy Mazza - WDD 230 - Port Orange Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/mazzac15/wdd230/main/images/port-orange.webp">
+    <meta property="og:url" content="https://mazzac15.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="menu"></a>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/placeholder-circle.png" alt="logo">
+            </a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join">
+        <h1 class="form">Join the Port Orange Chamber of Commerce</h1>
+            <form method="get" action="thankyou.html">
+                <legend>Applicant Information</legend>
+                <fieldset>
+                    <label class="top">First Name*<input type="text" name="fname" id="fname" required></label>
+                    <label class="top">Last Name*<input type="text" name="lname" id="lname" required></label>
+                    <label class="top">Title or Position<input type="text" name="title" id="title" pattern="^[a-zA-Z\s-]{7,}$"></label>
+                    <label class="top">Email*<input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                    <label class="top">Mobile Phone Number*<input type="tel" name="phone" id="phone" required></label>
+                    <label class="top">Business/Organization Name*<input type="text" name="business" id="business" required></label>
+                </fieldset>
+                <legend>Membership Level</legend>
+                <fieldset class="sbs-grid">
+                    <label class="sbs"><input type="radio" name="level" value="np" onclick="showBenefits('np')"> NP Membership</label>
+                        <div class="collapsible-content" id="np-content">
+                            <div class="benefits-content">
+                                <h3>NP (Non Profit) Membership Benefits:</h3>
+                                <p>No Fee Anually</p><br>
+                                <p>An opportunity to develop your business, network with potential customers and business owners, and build credibility for your business. You will be able to take advantage of all the networking and connection opportunities the Chamber has to offer. Your business will be listed in the online Chamber Directory. Additionally, you will be welcomed into the Chamber through social media postings, and you will have the opportunity to hold a ribbon-cutting ceremony to officially kick off your membership.<br>
+                                    <br>
+                                    • Member pricing on events, products, and services; including Business Councils and the Ponce Inlet Beach Division<br>
+                                    • Business listing in Chamber online directory<br>
+                                    • Ribbon cutting for your business<br>
+                                    • Official Chamber welcome promoting your business on social media</p>
+                            </div>
+                        </div>
+                    <label class="sbs"><input type="radio" name="level" value="bronze"onclick="showBenefits('bronze')"> Bronze Membership</label>
+                        <div class="collapsible-content" id="bronze-content">
+                            <div class="benefits-content">
+                                <h3>Bronze Membership Benefits:</h3>
+                                <p>$200.00 USD Anually</p><br>
+                                <p>The Bronze Membership helps you ascend to the next level of business. It not only includes the features and benefits of the NP Membership, but it admits your company to membership in the elite Economic Development Council (EDC). As an EDC member, you will receive periodic updates that will inform you of all of the development activities taking place in Port Orange. This membership is perfect for small businesses looking to grow and develop new clients and customers.<br>
+                                    <br>
+                                    • Membership in the Economic Development Council<br>
+                                    • 2 category listings in Chamber online directory</p>
+                            </div>
+                        </div>
+                    <label class="sbs"><input type="radio" name="level" value="silver" onclick="showBenefits('silver')"> Silver Membership</label>
+                        <div class="collapsible-content" id="silver-content">
+                            <div class="benefits-content">
+                                <h3>Silver Membership Benefits:</h3>
+                                <p>$400.00 USD Anually</p><br>
+                                <p>With a Silver Membership you are significantly stepping up your commitment to the business community in Port Orange and at the same time stepping up your business profile within the Chamber. At this level of membership, you can not only take advantage of what`s available to you in the previous levels of membership, but you can also use a portion of your membership towards sponsoring an event, which will offer you and your business additional exposure. If you have more than one location, Silver Membership will also allow you to add an additional office to your membership at no additional cost.<br>
+                                    <br>
+                                    • $200 in sponsorship credit<br>
+                                    • Membership for 1 additional branch or office<br>
+                                    • 3 category listings in Chamber online directory<br>
+                                    • Chamber member mailing labels</p>
+                            </div>
+                        </div>
+                    <label class="sbs"><input type="radio" name="level" value="gold" onclick="showBenefits('gold')"> Gold Membership</label>
+                        <div class="collapsible-content" id="gold-content">
+                            <div class="benefits-content">
+                                <h3>Gold Membership Benefits:</h3>
+                                <p>$1000.00 USD Annually</p><br>
+                                <P>The Gold Membership will offer you an ever-increasing business profile within the Chamber and beyond. With $500 available in sponsorship credit, you will now have the ability to sponsor multiple events if you so desire. Additionally, if you have multiple locations, this tier will cover two additional locations under your Gold Membership. This membership is an ideal fit for a business that is established and continuing to grow.<br>
+                                    <br>
+                                    • $500 in sponsorship credit<br>
+                                    • Membership for 2 additional branch/ office locations<br>
+                                    • 4 category listings in Chamber online directory</P>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <legend>Business Description</legend>
+                <fieldset>
+                    <label class="descrip"><textarea name="description" id="description" placeholder="Please enter a description of your business or organization here."></textarea></label>
+                </fieldset>
+                <label class="timestamp"><input type="hidden" name="timestamp" id="timestamp"></label>
+                <input type="submit" value="Join Now" class="submitBtn">
+            </form>
+    </main>
+
+    <footer>
+        <p>Contact: maz22004@byui.edu</p>
+        <p>Project for WDD 230</p>
+        <p>&#169;<span id="currentYear"></span><span id="nameLocation"> Cindy Mazza, Florida</span></p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+    <script  src="scripts/chamber.js"></script>
+    
+</body>
+</html>

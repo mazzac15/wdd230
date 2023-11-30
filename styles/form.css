@@ -50,7 +50,6 @@ form label input {
 
 form input.submitBtn {
     border: none;
-    background-color: var(--main-color);
     background-color: var(--accent-color2);
     color: white;
     border-radius: 1rem;

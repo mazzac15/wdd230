@@ -7,6 +7,17 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('open');
 })
 
+function showBenefits(level) {
+    const collapsibleContent = document.getElementById(`${level}-content`);
+    const maxHeight = collapsibleContent.style.maxHeight;
+
+    if (!maxHeight || maxHeight === "0px") {
+        collapsibleContent.style.maxHeight = collapsibleContent.scrollHeight + "px";
+    } else {
+        collapsibleContent.style.maxHeight = "0";
+    }
+}
+
 
 const currentYearElement = document.getElementById('currentYear');
 const currentYear = new Date().getFullYear();
@@ -15,6 +26,7 @@ currentYearElement.textContent = currentYear;
 const lastModifiedElement = document.getElementById('lastModified');
 const lastModifiedDate = new Date(document.lastModified);
 lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate.toDateString();
+
 
 document.addEventListener('DOMContentLoaded', function () {
     if (localStorage.getItem('lastVisit')) {
@@ -32,5 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('days').innerText = "Welcome! Let us know if you have any questions.";
     }
 
+    const form = document.querySelector('form');
+    form.addEventListener('submit', function () {
+        const currentTimestamp = new Date().toISOString();
+        document.getElementById('timestamp').value = currentTimestamp;
+    });
     localStorage.setItem('lastVisit', new Date().toISOString());
 });

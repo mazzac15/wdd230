@@ -63,15 +63,8 @@ function displayRatingValue() {
     rangeValue.innerHTML = range.value;
 }
 
-const currentYearElement = document.getElementById('currentYear');
-const currentYear = new Date().getFullYear();
-currentYearElement.textContent = currentYear;
-
-const lastModifiedElement = document.getElementById('lastModified');
-const lastModifiedDate = new Date(document.lastModified);
-lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate.toDateString();
-
 const visitsDisplay = document.querySelector(".visits");
+
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 if (numVisits !== 0) {
@@ -83,3 +76,13 @@ if (numVisits !== 0) {
 numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
+
+
+const currentYearElement = document.getElementById('currentYear');
+const currentYear = new Date().getFullYear();
+currentYearElement.textContent = currentYear;
+
+const lastModifiedElement = document.getElementById('lastModified');
+const lastModifiedDate = new Date(document.lastModified);
+lastModifiedElement.textContent = 'Last modified: ' + lastModifiedDate.toDateString();
+

@@ -112,6 +112,21 @@
 
    .local-pics img:hover {
         opacity: .5;
-   }
-   
+    }
+
+    form label.sbs {
+        padding: .4rem 0;
+    }
+  
+    fieldset.sbs-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        margin: auto;
+    }
+
+    .collapsible-content {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
 }
