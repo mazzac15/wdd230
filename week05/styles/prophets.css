@@ -1,0 +1,55 @@
+body {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #eee;
+}
+header {
+    color: black;
+}
+
+header, main, footer {
+    margin: 1rem;
+    position: relative;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 1rem;
+    background-color: #4C5B5C;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    color: #CCB7AE;
+  }
+
+  img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+  }
+
+  p {
+    margin: 0;
+    padding: 2px;
+    font-weight: 600;
+    color: white;
+  }
+
+  #cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: #CCB7AE;
+    border: 1px solid black;
+    padding: 0.25rem;
+    align-items: center;
+    
+  }
+
+  footer{
+    color: black;
+  }
