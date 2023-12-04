@@ -29,8 +29,4 @@ const displayResults = (data) => {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
-
-    
-
-    
 }

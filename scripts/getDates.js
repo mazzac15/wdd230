@@ -26,6 +26,39 @@ myBtn.addEventListener('click', () => {
 
 })
 
+//weather//
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const weatherDescription = document.querySelector('#weather-description');
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=29.13&lon=-80.99&units=imperial&appid=aec580674ccfff0b30adc9d8b9af6b31'
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            weatherDisplay(data);
+            // console.log(data);
+        
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+            console.log(error);
+    }
+}
+
+apiFetch();
+
+const weatherDisplay = (data) => {
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    currentTemp.innerHTML = `<img id="weather-icon" src="${iconsrc}" alt="${data.weather[0].description}">${data.main.temp}&deg;F - ${data.weather[0].description}`;    let desc = data.weather[0].description;
+
+    // weatherIcon.setAttribute('src', iconsrc);
+    // weatherIcon.setAttribute('alt', desc);
+    // weatherDescription.textContent = `${desc}`;
+    }
+
 //visit counter//
 
 const visitsDisplay = document.querySelector(".visits");
@@ -91,5 +124,6 @@ range.addEventListener('input', displayRatingValue);
 function displayRatingValue() {
     rangeValue.innerHTML = range.value;
 }
+
 
 
