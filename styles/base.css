@@ -138,24 +138,33 @@ h2 {
 }
 
 .card {
+    padding-bottom: 20px;
     border: 1px solid black;
     border-radius: 5px;
     height: auto;
     margin-bottom: 20px;
     list-style-type: none;
-    text-align: center;
     background-color: white;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
       
+}
+
+.card p {
+    padding-left: 20px;
 }
 
 .card h3 {
     background-color: #374B4A;
     color: white;
     padding: 20px;
-    margin: 0;
+    margin-bottom: 20px;
     border-radius: 2px 2px 0 0;
     font-size: 20px;
+    text-align: center;
+}
+
+.weather {
+    margin-top: 0;
 }
 
 .week {
