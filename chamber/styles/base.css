@@ -324,6 +324,20 @@ main p.thanks {
     font-size: 2em; 
 }
 
+
+
+    
+.member-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    background-color: #CCB7AE;
+    border: 1px solid black;
+    padding: 0.25rem;
+    align-items: center;
+}
+    
+
+
 footer {
     background-color: var(--primary-color);
     text-align: center;

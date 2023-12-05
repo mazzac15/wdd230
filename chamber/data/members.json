@@ -1,60 +1,60 @@
 {
     "members" : [
         {
-            "company name": "Beauchamp Orthodontics",
-            "company address": "3890 Turtle Creek Dr, Suite A, Port Orange FL, 32127",
-            "phone number": "386-761-5440",
-            "website URLs": "https://www.beauchamporthodontics.com/",
-            "image/icon name": "bo-logo",
-            "membership level": "Gold"
+            "name": "Beauchamp Orthodontics",
+            "address": "3890 Turtle Creek Dr, Suite A, Port Orange FL, 32127",
+            "phone": "386-761-5440",
+            "website": "https://www.beauchamporthodontics.com/",
+            "image": "bo-logo",
+            "membership": "Gold"
         },
         {
-            "company name": "Pauline's Pet Styling",
-            "company address": "5000 S Clyde Morris Blvd. #15, Port Orange, FL 32127",
-            "phone number": "386-761-2991",
-            "website URLs": "https://www.webestyling.com",
-            "image/icon name": "paulines-logo",
-            "membership level": "Bronze"
+            "name": "Pauline's Pet Styling",
+            "address": "5000 S Clyde Morris Blvd. #15, Port Orange, FL 32127",
+            "phone": "386-761-2991",
+            "website": "https://www.webestyling.com",
+            "image": "paulines-logo",
+            "membership": "Bronze"
         },
         {
-            "company name": "Port Orange Boxing & Fitness",
-            "company address": "3780 South Nova Road, Port Orange, FL, 32129",
-            "phone number": "386-675-2269",
-            "website URLs": "https://www.portorangeboxingandfitness.com/",
-            "image/icon name": "POBoxingLogo",
-            "membership level": "Silver"
+            "name": "Port Orange Boxing & Fitness",
+            "address": "3780 South Nova Road, Port Orange, FL, 32129",
+            "phone": "386-675-2269",
+            "website": "https://www.portorangeboxingandfitness.com/",
+            "image": "POBoxingLogo",
+            "membership": "Silver"
         },
         {
-            "company name": "Lola's Cantina and Burger Bar",
-            "company address": "1665 Dunlawton Ave., Ste. 101, Port Orange, FL 32127",
-            "phone number": "386-761-6868",
-            "website URLs": "https://lolascantina.net/",
-            "image/icon name": "lolas-logo",
-            "membership level": "Gold"
+            "name": "Lola's Cantina and Burger Bar",
+            "address": "1665 Dunlawton Ave., Ste. 101, Port Orange, FL 32127",
+            "phone": "386-761-6868",
+            "website": "https://lolascantina.net/",
+            "image": "lolas-logo",
+            "membership": "Gold"
         },
         {
-            "company name": "Riverside Pavilion",
-            "company address": "3431 S. Ridgewood Avenue, Port Orange, FL 32129",
-            "phone number": "386-761-8122",
-            "website URLs": "https://www.theriversidepavilion.com/",
-            "image/icon name": "riverside-logo",
-            "membership level": "Gold"
+            "name": "Riverside Pavilion",
+            "address": "3431 S. Ridgewood Avenue, Port Orange, FL 32129",
+            "phone": "386-761-8122",
+            "website": "https://www.theriversidepavilion.com/",
+            "image": "riverside-logo",
+            "membership": "Gold"
         },
         {
-            "company name": "Jet's Pizza",
-            "company address": "3813 Clyde Morris Blvd, Port Orange, FL 32129",
-            "phone number": "386-488-2939",
-            "website URLs": "https://www.jetspizza.com/",
-            "image/icon name": "jets-logo",
-            "membership level": "Silver"
+            "name": "Jet's Pizza",
+            "address": "3813 Clyde Morris Blvd, Port Orange, FL 32129",
+            "phone": "386-488-2939",
+            "website": "https://www.jetspizza.com/",
+            "image": "jets-logo",
+            "membership": "Silver"
         },
         {
-            "company name": "Splash Express Car Wash",
-            "company address": "956 Herbert Street, Port Orange, FL 32129",
-            "phone number": "386-492-9141",
-            "website URLs": "https://www.mysplashcarwash.com/",
-            "image/icon name": "splash-logo",
-            "membership level": "Bronze"
+            "name": "Splash Express Car Wash",
+            "address": "956 Herbert Street, Port Orange, FL 32129",
+            "phone": "386-492-9141",
+            "website": "https://www.mysplashcarwash.com/",
+            "image": "splash-logo",
+            "membership": "Bronze"
         }
     ]
 }
