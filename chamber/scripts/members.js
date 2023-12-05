@@ -1,9 +1,11 @@
 const baseURL = "https://mazzac15.github.io/wdd230/";
-const linksURL = "https://mazzac15.github.io/wdd230/chamber/data/members.json";
+const membersURL = "https://mazzac15.github.io/wdd230/chamber/data/members.json";
+
 
 async function getMembers() {
-    const response = await fetch(linksURL);
+    const response = await fetch(membersURL);
     const data = await response.json();
+    console.table(data.members)
     
     displayMembers(data.members);
 }
@@ -11,7 +13,7 @@ async function getMembers() {
 getMembers();
 
 const displayMembers = (members) => {
-    const cardsContainer = document.getElementById('cards');
+    const cards = document.getElementById('cards');
     
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -24,13 +26,13 @@ const displayMembers = (members) => {
         logo.setAttribute('src', member.image)
         logo.setAttribute('alt', `company logo`)
         logo.setAttribute('loading', 'lazy');
-        logo.setAttribute('width', '250');
-        logo.setAttribute('height', '250');
+        logo.setAttribute('width', '340');
+        logo.setAttribute('height', '440');
 
-        name.textContent = member.name;
-        address.textContent = `Address: ${member.address}`;
-        phone.textContent = `Phone: ${member.phone}`;
-        website.textContent = 'Website';
+        name.textContent = `${member.name}`;
+        address.textContent = `${member.address}`;
+        phone.textContent = `${member.phone}`;
+        website.textContent = `${member.website}`
         website.setAttribute('href', member.website);
 
         card.appendChild(logo);
@@ -39,6 +41,6 @@ const displayMembers = (members) => {
         card.appendChild(phone);
         card.appendChild(website);
 
-        cardsContainer.appendChild(card);
+        cards.appendChild(card);
     })
 }

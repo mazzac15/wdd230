@@ -5,7 +5,7 @@
             "address": "3890 Turtle Creek Dr, Suite A, Port Orange FL, 32127",
             "phone": "386-761-5440",
             "website": "https://www.beauchamporthodontics.com/",
-            "image": "bo-logo",
+            "image": "images/bo-logo.png",
             "membership": "Gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "5000 S Clyde Morris Blvd. #15, Port Orange, FL 32127",
             "phone": "386-761-2991",
             "website": "https://www.webestyling.com",
-            "image": "paulines-logo",
+            "image": "images/paulines-logo.webp",
             "membership": "Bronze"
         },
         {
@@ -21,7 +21,7 @@
             "address": "3780 South Nova Road, Port Orange, FL, 32129",
             "phone": "386-675-2269",
             "website": "https://www.portorangeboxingandfitness.com/",
-            "image": "POBoxingLogo",
+            "image": "images/POBoxingLogo",
             "membership": "Silver"
         },
         {
@@ -29,7 +29,7 @@
             "address": "1665 Dunlawton Ave., Ste. 101, Port Orange, FL 32127",
             "phone": "386-761-6868",
             "website": "https://lolascantina.net/",
-            "image": "lolas-logo",
+            "image": "images/lolas-logo",
             "membership": "Gold"
         },
         {
@@ -37,7 +37,7 @@
             "address": "3431 S. Ridgewood Avenue, Port Orange, FL 32129",
             "phone": "386-761-8122",
             "website": "https://www.theriversidepavilion.com/",
-            "image": "riverside-logo",
+            "image": "images/riverside-logo",
             "membership": "Gold"
         },
         {
@@ -45,7 +45,7 @@
             "address": "3813 Clyde Morris Blvd, Port Orange, FL 32129",
             "phone": "386-488-2939",
             "website": "https://www.jetspizza.com/",
-            "image": "jets-logo",
+            "image": "images/jets-logo",
             "membership": "Silver"
         },
         {
@@ -53,7 +53,7 @@
             "address": "956 Herbert Street, Port Orange, FL 32129",
             "phone": "386-492-9141",
             "website": "https://www.mysplashcarwash.com/",
-            "image": "splash-logo",
+            "image": "images/splash-logo",
             "membership": "Bronze"
         }
     ]
