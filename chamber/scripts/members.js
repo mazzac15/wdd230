@@ -28,7 +28,7 @@ const displayMembers = (members) => {
         logo.setAttribute('height', '440');
 
         name.textContent = `${member.name}`;
-        address.textContent = `${member.address}<br>${member.city}`;
+        address.innerHTML = `${member.address}<br>${member.city}`;
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`
         website.setAttribute('href', member.website);
@@ -36,7 +36,6 @@ const displayMembers = (members) => {
         card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(address);
-        card.appendChild(city);
         card.appendChild(phone);
         card.appendChild(website);
 

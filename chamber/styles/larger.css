@@ -138,14 +138,33 @@
         grid-gap: 10px;
         padding: 3rem;
         align-items: center;
+        grid-gap: 0;
     }
 
-    .directory-main.list-view #section {
+    .directory-main.list-view #cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 3rem;   
+    }
+
+    .directory-main.list-view section {
         display: grid;
-        grid-template-columns: 2fr 2fr 1fr 1fr;
+        grid-template-columns: 250px 2fr 1fr;
         margin: 0;
         padding: .25rem;
         width: 100%;
         justify-content: center;
+        box-shadow: none;
     }
+
+    .directory-main.list-view p {
+        text-align: right;
+    }
+
+    .directory-main.list-view h2 {
+        text-align: left;
+    }
+
+   
 }

@@ -359,6 +359,9 @@ section {
     color: black;
 }
 
+button {
+    padding: .5rem;
+}
 .directory-main.grid-view #cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -367,18 +370,20 @@ section {
     align-items: stretch;
 }
 
-/* .directory-main.list-view #cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 3rem;
-    
-    /* align-items: center; */
-} */
+.directory-main.list-view #cards {
+    margin: 15px;
+
+}
 
 .directory-main.list-view {
     display: flex;
     flex-direction: column;
+}
+
+.directory-main.list-view section {
+    box-shadow: none;
+    margin: 0;  
+    padding: .5rem;
 }
 
 .directory-main.list-view section > * {
@@ -391,6 +396,7 @@ section {
 
 .directory-main.list-view section h2 {
 	font-size: 1rem;
+    border-bottom: 0;
 }
 
 .directory-main.list-view section p {
@@ -400,6 +406,7 @@ section {
 .directory-main.list-view section:nth-child(even) {
 	background-color: var(--secondary-color);
 }
+
 
 /* footer */
 footer {
