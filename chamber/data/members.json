@@ -2,7 +2,8 @@
     "members" : [
         {
             "name": "Beauchamp Orthodontics",
-            "address": "3890 Turtle Creek Dr, Suite A, Port Orange FL, 32127",
+            "address": "3890 Turtle Creek Dr, Suite A,",
+            "city": "Port Orange FL, 32127",
             "phone": "386-761-5440",
             "website": "https://www.beauchamporthodontics.com/",
             "image": "images/bo-logo.webp",
@@ -10,7 +11,8 @@
         },
         {
             "name": "Pauline's Pet Styling",
-            "address": "5000 S Clyde Morris Blvd. #15, Port Orange, FL 32127",
+            "address": "5000 S Clyde Morris Blvd. #15,",
+            "city": "Port Orange FL, 32127",
             "phone": "386-761-2991",
             "website": "https://www.webestyling.com",
             "image": "images/paulines-logo.webp",
@@ -18,7 +20,8 @@
         },
         {
             "name": "Port Orange Boxing & Fitness",
-            "address": "3780 South Nova Road, Port Orange, FL, 32129",
+            "address": "3780 South Nova Road,",
+            "city": "Port Orange FL, 32129",
             "phone": "386-675-2269",
             "website": "https://www.portorangeboxingandfitness.com/",
             "image": "images/POBoxingLogo.webp",
@@ -26,7 +29,8 @@
         },
         {
             "name": "Lola's Cantina and Burger Bar",
-            "address": "1665 Dunlawton Ave., Ste. 101, Port Orange, FL 32127",
+            "address": "1665 Dunlawton Ave., Ste. 101,",
+            "city": "Port Orange FL, 32127",
             "phone": "386-761-6868",
             "website": "https://lolascantina.net/",
             "image": "images/lolas-logo.webp",
@@ -34,7 +38,8 @@
         },
         {
             "name": "Riverside Pavilion",
-            "address": "3431 S. Ridgewood Avenue, Port Orange, FL 32129",
+            "address": "3431 S. Ridgewood Avenue,",
+            "city": "Port Orange FL, 32129",
             "phone": "386-761-8122",
             "website": "https://www.theriversidepavilion.com/",
             "image": "images/riverside-logo.webp",
@@ -42,7 +47,8 @@
         },
         {
             "name": "Jet's Pizza",
-            "address": "3813 Clyde Morris Blvd, Port Orange, FL 32129",
+            "address": "3813 Clyde Morris Blvd,",
+            "city": "Port Orange FL, 32129",
             "phone": "386-488-2939",
             "website": "https://www.jetspizza.com/",
             "image": "images/jets-logo.webp",
@@ -50,7 +56,8 @@
         },
         {
             "name": "Splash Express Car Wash",
-            "address": "956 Herbert Street, Port Orange, FL 32129",
+            "address": "956 Herbert Street,",
+            "city": "Port Orange FL, 32129",
             "phone": "386-492-9141",
             "website": "https://www.mysplashcarwash.com/",
             "image": "images/splash-logo.webp",

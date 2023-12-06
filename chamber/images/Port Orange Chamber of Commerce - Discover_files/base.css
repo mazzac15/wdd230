@@ -198,7 +198,10 @@ h1 {
     background-color: var(--accent1-color);
 }
 
-
+.local-pics img {
+    width: auto;
+    height: auto;
+}
 .sidebar {
     padding: 10px;
     background-color: var(--accent1-color);
@@ -341,64 +344,22 @@ section {
     align-items: center;
 }
 
-.directory-main h2 {
+section h2 {
     color: black;
 }
 
-.directory-main img {
+section img {
     width: auto;
     
     max-width: 250px;
     max-height: 80px;
 }
 
-.directory-main p {
+section p {
     margin: 0;
     padding: 2px;
     font-weight: 600;
     color: black;
-}
-
-.directory-main.grid-view #cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 10px;
-    padding: 3rem;
-    align-items: stretch;
-}
-
-/* .directory-main.list-view #cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 3rem;
-    
-    /* align-items: center; */
-} */
-
-.directory-main.list-view {
-    display: flex;
-    flex-direction: column;
-}
-
-.directory-main.list-view section > * {
-	margin: 0 1rem;
-}
-
-.directory-main.list-view section img {
-	display: none; /* smaller viewports only */
-}
-
-.directory-main.list-view section h2 {
-	font-size: 1rem;
-}
-
-.directory-main.list-view section p {
-	font-size: 1rem;
-}
-
-.directory-main.list-view section:nth-child(even) {
-	background-color: var(--secondary-color);
 }
 
 /* footer */

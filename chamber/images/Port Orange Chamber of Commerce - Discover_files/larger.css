@@ -47,7 +47,8 @@
         
     }
 
-    .home-grid {
+    main {
+        display: grid;
         max-width: 960px;
         width: 100%;
         height: auto;
@@ -132,20 +133,14 @@
     
     /* styling for directory */
     
-     .directory-main #cards {
+    
+
+    #cards {
         display: grid;
+        
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-gap: 10px;
-        padding: 3rem;
-        align-items: center;
-    }
-
-    .directory-main.list-view #section {
-        display: grid;
-        grid-template-columns: 2fr 2fr 1fr 1fr;
-        margin: 0;
-        padding: .25rem;
-        width: 100%;
-        justify-content: center;
+        padding: 0.25rem;
+        
     }
 }

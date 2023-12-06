@@ -1,11 +1,11 @@
 const baseURL = "https://mazzac15.github.io/wdd230/";
 const membersURL = "https://mazzac15.github.io/wdd230/chamber/data/members.json";
-
+const cards = document.querySelector('#cards');
 
 async function getMembers() {
     const response = await fetch(membersURL);
     const data = await response.json();
-    console.table(data.members)
+    // console.table(data.members)
     
     displayMembers(data.members);
 }
@@ -13,9 +13,7 @@ async function getMembers() {
 getMembers();
 
 const displayMembers = (members) => {
-    const cards = document.getElementById('cards');
-    
-    members.forEach((member) => {
+        members.forEach((member) => {
         let card = document.createElement('section');
         let name = document.createElement('h2');
         let logo = document.createElement('img');
@@ -30,7 +28,7 @@ const displayMembers = (members) => {
         logo.setAttribute('height', '440');
 
         name.textContent = `${member.name}`;
-        address.textContent = `${member.address}`;
+        address.textContent = `${member.address}<br>${member.city}`;
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`
         website.setAttribute('href', member.website);
@@ -38,9 +36,24 @@ const displayMembers = (members) => {
         card.appendChild(logo);
         card.appendChild(name);
         card.appendChild(address);
+        card.appendChild(city);
         card.appendChild(phone);
         card.appendChild(website);
 
         cards.appendChild(card);
     })
 }
+
+const gridButton = document.querySelector("#grid-view");
+const listButton = document.querySelector("#list-view");
+const display = document.querySelector(".directory-main")
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid-view");
+    display.classList.remove("list-view");
+});
+
+listButton.addEventListener("click", () => {
+    display.classList.remove("grid-view");
+    display.classList.add("list-view");
+});
