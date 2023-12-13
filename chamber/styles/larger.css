@@ -96,11 +96,6 @@
         height: auto;
         margin: auto;
         display: block;
-        transition: transform 0.3s ease-in-out; /* Smooth transition for the animation */
-    
-        &:hover {
-            transform: rotate(360deg);
-        }
     }
 
     /* events */

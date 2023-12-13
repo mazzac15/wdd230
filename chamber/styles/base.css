@@ -201,6 +201,13 @@ h2 {
 
 #local-businesses {
     display: none;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+}
+
+#local-businesses.show {
+    display: flex;
+    transform: scale(1);
 }
 
 .spotlights-title {

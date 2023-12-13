@@ -171,8 +171,9 @@ h2 {
 .weather {
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     padding: 10px; 
+    padding-top: 0;
 }
 
 .visited {
