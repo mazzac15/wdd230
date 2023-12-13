@@ -99,7 +99,6 @@ nav .active {
 .hero {
     margin: auto;
     position: relative;
-    background-size: cover;
     height: auto;
     margin-bottom: 0;
 }
@@ -253,7 +252,7 @@ h2 {
 
 .weather h2 {
     border-bottom: none;
-    color: white;
+    color: black;
     padding-bottom: 0;
     margin-bottom: 0;
 }

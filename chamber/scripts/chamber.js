@@ -18,6 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const banner = document.getElementById("banner");
+
+    if (shouldShowBanner()) {
+        banner.style.display = "block";
+    }
+});
+
+function shouldShowBanner() {
+    const currentDate = new Date();
+    const dayOfWeek = currentDate.getDay();
+
+    return dayOfWeek >= 1 && dayOfWeek <= 3;
+}
+
 // Benefit levels for membership join form //
 function showBenefits(level) {
     const collapsibleContent = document.getElementById(`${level}-content`);
@@ -175,6 +190,10 @@ document.addEventListener('DOMContentLoaded', function () {
         const timeDifference = new Date() - lastVisitDate;
         const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
+        console.log('Last Visit Date:', lastVisitDate);
+        console.log('Time Difference:', timeDifference);
+        console.log('Days Difference:', daysDifference);
+
         if (daysDifference === 0) {
             document.getElementById('days').innerText = "Back so soon! Awesome!";
         } else {
@@ -188,6 +207,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const form = document.querySelector('form');
     form.addEventListener('submit', function () {
         const currentTimestamp = new Date().toISOString();
+        console.log('Form submitted. Timestamp:', currentTimestamp);
         document.getElementById('timestamp').value = currentTimestamp;
     });
     localStorage.setItem('lastVisit', new Date().toISOString());
