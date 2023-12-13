@@ -53,12 +53,7 @@ apiFetch();
 const weatherDisplay = (data) => {
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     currentTemp.innerHTML = `<img id="weather-icon" src="${iconsrc}" alt="${data.weather[0].description}">${data.main.temp}&deg;F - ${data.weather[0].description}`;    let desc = data.weather[0].description;
-
-    // weatherIcon.setAttribute('src', iconsrc);
-    // weatherIcon.setAttribute('alt', desc);
-    // weatherDescription.textContent = `${desc}`;
-    }
-
+}
 //visit counter//
 
 const visitsDisplay = document.querySelector(".visits");

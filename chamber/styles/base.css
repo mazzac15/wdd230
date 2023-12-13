@@ -5,7 +5,7 @@
  /* color palette */
  :root {
     --primary-color :#2B4570;
-    --secondary-color: #a0c1b96c;
+    --secondary-color: #a0c1b9;
     --accent1-color: #70A0AF;
     --accent2-color: #FFCAB1;
  }
@@ -34,39 +34,6 @@ header {
     width: 100px;   
 }
 
-/* home page styling */
-.hero {
-    margin: auto;
-    position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    height: auto;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-title {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border-radius: 5px;
-    z-index: 1;
-}
-
-.hero-title {
-    margin: 0;
-    padding: 0;
-}
-
 #menu {
     display: block;
     position: absolute;
@@ -75,7 +42,6 @@ header {
     right: 20px;
     top: 10px;
 }
-
 
 #menu::before {
 	content: "☰";
@@ -118,6 +84,8 @@ nav .active {
     background-color: rgba(0,0,0,0.25);
 }
 
+/* home page styling */
+
 .main {
     padding: 20px;
     max-width: 400px;
@@ -127,6 +95,64 @@ nav .active {
     margin: auto;
 }
 
+/* hero */
+.hero {
+    margin: auto;
+    position: relative;
+    background-size: cover;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.hero img {
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.hero-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    max-width: fit-content;
+}
+
+
+
+/* home page main */
+
+.banner-content {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-content strong {
+    font-size: 1.5em;
+}
+.banner-content p {
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.banner-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 h2 {
     color: var(--primary-color);
     text-align: center;
@@ -134,43 +160,148 @@ h2 {
     border-bottom: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.card {
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
-    color: black;
-    background-color: var(--accent1-color);
-    text-align: center;
+/* spotlights */
+
+.spotlight-card {
+    margin: .25rem;
+    padding: .5rem;
+    border: 1px solid black;
+    box-shadow: 0 0 30px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    transition: opacity 1s ease-in-out;
 }
 
-.business {
-    padding: 10px;
+.spotlight-card.fade-in {
+    opacity: 1;
 }
 
-.weather {
-    max-width: 400px;
-    width: 100%;
-    background-color: #A0C1B9; 
-    padding: 20px;
+.spotlight-card img {
+    max-height: 150px;
+    width: auto;
+    max-width: 250px;
 }
-
 
 .spotlights {
-    max-width: 400px;
-    width: 100%;
+    margin-top: 0;
+    display: block;
     height: auto;
-    background-color: #FFCAB1;
+    background-color: var(--secondary-color);
     padding: 20px;
+}
+
+#local-businesses {
+    display: none;
 }
 
 .spotlights-title {
-    width: 100%;
     text-align: center;
 }
+
+/* events */
+
+.card {
+    min-width: 300px;
+    max-width: 375px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+.card img{
+    max-width: 275px;
+}
+
+.events {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* weather */
+
+.weather {
+    display: block;
+    background-color: var(--accent1-color);
+    max-width: 100%;
+    padding-top: 2px;
+    text-align: center;
+}
+
+.weather h2 {
+    border-bottom: none;
+    color: white;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.current-entry {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.current-icon {
+    width: 80px;
+    height: 80px;
+}
+
+.current-temp {
+    font-size: 1.5em;
+    padding: 0;
+}
+
+.current-description {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.20em;
+}
+
+.forecast-entry {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.forecast.icon {
+    width: 40px;
+    height: 40px;
+}
+
+.forecast-temp {
+    font-size: 1em;
+}
+
+.forecast-description {
+    margin: 5px;
+}
+
+/* banner */
+.banner-ad {
+    background-color: var(--accent2-color);
+}
+
+
+
 /* styling for the Discover page */
 .business-info {
     padding: 10px;
     text-align: center;
+}
+
+.discover-card h2 {
+    color: black;
 }
 
 .discover-card {
@@ -182,6 +313,18 @@ h2 {
     text-align: center;
     margin-top: 10px;
 
+}
+
+.discover-card p.standout {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+}
+.discover-card p {
+    padding: 5px;
+    text-align: left;
 }
 
 h1 {
@@ -330,8 +473,11 @@ main p.thanks {
 }
 
 /* directory page styling */
+.menu {
+    padding: 5px;
+}
 
-section {
+.directory-main section {
     margin: .25rem;
     padding: .5rem;
     border: 1px solid black;
@@ -406,6 +552,9 @@ button {
 .directory-main.list-view section:nth-child(even) {
 	background-color: var(--secondary-color);
 }
+
+
+
 
 
 /* footer */

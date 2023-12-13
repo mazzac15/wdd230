@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
         <nav>
             <a id="menu"></a>
             <a id="logo_link" href="index.html">
-                <img class="logo" src="images/placeholder-circle.png" alt="logo">
+                <img class="logo" src="images/port-orange-logo.webp" alt="logo">
             </a>
             <ul class="navigation">
                 <li class="active"><a href="#">Home</a></li>
@@ -30,59 +31,81 @@
             </ul>
         </nav>
     </header>
-    <main class="home-grid">
-        <div class="hero">
-            <div class="hero-title">Port Orange Chamber of Commerce</div>
-            <img src="images/hero-port-orange-rz.jpg" alt="City of Port Orange FL">
+    <main>
+        <div class="banner-ad">
+            <div class="banner-content">
+                <strong>Reminder: </strong>
+                <p> Meet and Greet Wednesday at 7pm</p>
+                <button class="banner-close" type="button">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
         </div>
-        <div class="container">
+
+        <div class="hero">
+            <div class="hero-container">
+                <div class="hero-title">Port Orange Chamber of Commerce</div>
+                <img src="images/port-orange-hero.webp" alt="City of Port Orange FL">
+            </div>
+        </div>
+        <section class="home-grid">
             <div class="spotlights">
                 <h2 class="spotlights-title">Business Spotlights</h2>
-                <div class="business">
-                    <img class="spot" src="https://placehold.jp/300x200.png" alt="placeholder image">
-                    <div class="business-info">
-                        <h3>Business Name</h3>
-                        <p>Details</p>
-                    </div>    
-                </div>    
-                <div class="business">
-                    <img class="spot" src="https://placehold.jp/300x200.png" alt="placeholder image">
-                    <div class="business-info">
-                        <h3>Business Name</h3>
-                        <p>Details</p>
-                    </div> 
-                </div>       
+                <div id="spotlight-container"></div>
+                <div id="local-businesses">
+                    <a id="logo_link" href="directory.html">
+                        <img src="images/Support-Local-Business.webp" alt="shop local logo">
+                    </a>
+                </div>          
             </div>
             <div class="events">
                 <h2>Mark Your Calendar</h2>
-                <div class="card">  
-                    <h3>Event 1</h3>
-                    <P>Date</P>
-                    <p>Time</p>
-                    <p>Location</p>
-                    <p>Description</p>
+                <div class="card"> 
+                    <img class="event1" src="images/banner-ad.webp" alt="weekly wednesday meet and greet event"> 
+                    <h3>Weekly Meet and Greet</h3>
+                    <P>Wednesday's</P>
+                    <p>7pm</p>
+                    <p>3431 Ridgewood Ave, Port Orange</p>
+                    <p>Welcome new members, 10-minute sponsor talk, and time for networking</p>
                 </div>
                 <div class="card">
-                    <h3>Event 2</h3>
-                    <P>Date</P>
-                    <p>Time</p>
-                    <p>Location</p>
-                    <p>Description</p>
+                    <h3>Ribbon Cutting - Good Vibes Spin & Circuit</h3>
+                    <P>Tuesday, December 19, 2023</P>
+                    <p>4:00pm</p>
+                    <p>N. Orange St, Port Orange</p>
+                    <p>Join us for a Ribbon Cutting to welcome Good Vibes Spin & Circuit to the Port Orange Chamber of Commerce and to see their new location!</p>
                 </div>
                 <div class="card">
-                    <h3>Event 3</h3>
-                    <P>Date</P>
-                    <p>Time</p>
-                    <p>Location</p>
-                    <p>Description</p>
+                    <h3>The Tech Tutor</h3>
+                    <P>Tuesday Jan 2, 2024</P>
+                    <p>10:30am - 11:30am</p>
+                    <p>Riverside Pavillion</p>
+                    <p>3431 S. Ridgewood Avenue, Port Orange</p>
+                    <p>The Tech Tutor provides group trainings to help with accessing technology. No matter your age bracket, or skill level, you can always learn how to get the most out of your phone, laptop, or tablet.</p>
                 </div>
             </div>
+        </section>
+
+        
             
             <div class="weather">
-                <h2>Weather</h2>
+                <div class="current">
+                    <h2>Port Orange Weather</h2>
+                    <div>
+                        <img id="weather-icon" src="" alt="">
+                        <span id="current-temp"></span><figcaption id="weather-description"></figcaption>
+                    </div>
+                </div>    
+                <div class="forecast">
+                    <span id="day-of-week"></span>
+                    <img id="forecast-icon" src="" alt="">
+                    <span id="forecast-temp"></span><figcaption id="forecast-description"></figcaption>
+                    <div class="forecast-entries" id="forecast-entries"></div>
+                </div>      
             </div>
         </div>
-        
     </main>
 
     <footer>
@@ -91,7 +114,9 @@
         <p>&#169;<span id="currentYear"></span><span id="nameLocation"> Cindy Mazza, Florida</span></p>
         <p><span id="lastModified"></span></p>
     </footer>
+    <script  src="scripts/members.js"></script>
     <script  src="scripts/chamber.js"></script>
+    
     
 </body>
 </html>

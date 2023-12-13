@@ -10,6 +10,24 @@
             "membership": "Gold"
         },
         {
+            "name": "Jet's Pizza",
+            "address": "3813 Clyde Morris Blvd,",
+            "city": "Port Orange FL, 32129",
+            "phone": "386-488-2939",
+            "website": "https://www.jetspizza.com/",
+            "image": "images/jets-logo.webp",
+            "membership": "Silver"
+        },
+        {
+            "name": "Lola's Cantina and Burger Bar",
+            "address": "1665 Dunlawton Ave., Ste. 101,",
+            "city": "Port Orange FL, 32127",
+            "phone": "386-761-6868",
+            "website": "https://lolascantina.net/",
+            "image": "images/lolas-logo.webp",
+            "membership": "Gold"
+        },
+        {
             "name": "Pauline's Pet Styling",
             "address": "5000 S Clyde Morris Blvd. #15,",
             "city": "Port Orange FL, 32127",
@@ -28,15 +46,6 @@
             "membership": "Silver"
         },
         {
-            "name": "Lola's Cantina and Burger Bar",
-            "address": "1665 Dunlawton Ave., Ste. 101,",
-            "city": "Port Orange FL, 32127",
-            "phone": "386-761-6868",
-            "website": "https://lolascantina.net/",
-            "image": "images/lolas-logo.webp",
-            "membership": "Gold"
-        },
-        {
             "name": "Riverside Pavilion",
             "address": "3431 S. Ridgewood Avenue,",
             "city": "Port Orange FL, 32129",
@@ -44,15 +53,6 @@
             "website": "https://www.theriversidepavilion.com/",
             "image": "images/riverside-logo.webp",
             "membership": "Gold"
-        },
-        {
-            "name": "Jet's Pizza",
-            "address": "3813 Clyde Morris Blvd,",
-            "city": "Port Orange FL, 32129",
-            "phone": "386-488-2939",
-            "website": "https://www.jetspizza.com/",
-            "image": "images/jets-logo.webp",
-            "membership": "Silver"
         },
         {
             "name": "Splash Express Car Wash",

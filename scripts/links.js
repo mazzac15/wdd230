@@ -10,7 +10,7 @@ async function getLinks() {
 getLinks();
 
 const displayLinks = (weeks) => {
-    let card = document.querySelector('.card')
+    let card = document.querySelector('.card1')
     let title = document.createElement('h3');
     let learningActivities = document.createElement('div');
 
